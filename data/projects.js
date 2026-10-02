@@ -1,0 +1,5 @@
+export const projects = [
+  { id: '01', title: 'API_GATEWAY_ENGINEERING', description: 'API proxy and gateway work centred on contract validation, request and response processing, and policy-based controls.', modules: ['AUTH / AUTHZ', 'RATE LIMITING', 'THREAT PROTECTION', 'OPENAPI'], stack: 'APIGEE / JAVA / REST', architecture: 'CLIENT -> API GATEWAY -> SERVICE' },
+  { id: '02', title: 'EVENT_DRIVEN_BACKENDS', description: 'Backend services designed around asynchronous communication, Redis caching, and decoupled service boundaries.', modules: ['KAFKA', 'REDIS', 'MICROSERVICES', 'DOCKER'], stack: 'NODE.JS / KAFKA / REDIS', architecture: 'SERVICE -> KAFKA -> CONSUMER -> DATA' },
+  { id: '03', title: 'GENAI_APPLICATION_SYSTEMS', description: 'Production-oriented AI application patterns combining retrieval, LLM APIs, and backend orchestration.', modules: ['RAG', 'EMBEDDINGS', 'AI AGENTS', 'SEMANTIC SEARCH'], stack: 'LANGCHAIN / LANGGRAPH / LLM APIs', architecture: 'DOCUMENTS -> RETRIEVAL -> LLM -> RESPONSE' }
+];

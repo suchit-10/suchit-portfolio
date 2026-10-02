@@ -1,0 +1,31 @@
+.process-list { margin: 18px 0; padding-left: 17px; color: #87b996; font: 10px/1.8 'DM Mono', monospace; }
+.process-list li { margin-bottom: 7px; padding-left: 4px; }
+.process-list li::marker { color: var(--green); }
+.stack-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 18px; }
+.stack-group { border: 1px solid var(--border); padding: 9px 10px; background: rgba(3,17,8,.35); }
+.stack-group h3 { margin: 0 0 6px; color: var(--green); font-size: 9px; font-weight: 400; }
+.stack-group p { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; }
+.stack-group span { color: #8fc59f; font: 8px/1.5 'DM Mono', monospace; }
+.stack-group span:not(:last-child)::after { content: ' /'; color: #447e55; }
+.systems { padding: 0 0 115px; }
+.system-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding-top: 27px; }
+.system-card { border: 1px solid var(--border); background: rgba(3,17,8,.48); padding: 18px; min-width: 0; }
+.system-card h3, .principle-list h3 { margin: 12px 0; color: var(--green); font-size: 12px; font-weight: 400; letter-spacing: .02em; }
+.system-card pre { min-height: 0; margin: 14px 0; color: #a4dcb6; font-size: 9px; line-height: 1.7; text-shadow: none; }
+.system-card > p:last-child { margin: 0; color: #7eaa8d; font: 10px/1.75 'DM Mono', monospace; }
+.principles { border-top: 1px solid var(--border); padding: 70px 0 95px; display: grid; grid-template-columns: 1fr 1.5fr; gap: 100px; }
+.principles h2 { font-family: var(--serif); font-size: 66px; line-height: .84; letter-spacing: -.05em; font-weight: 400; margin: 0; }
+.principles h2 em { color: var(--green); font-weight: 400; }
+.principle-list { border-top: 1px solid var(--border); }
+.principle-list article { display: grid; grid-template-columns: 145px 1fr; gap: 20px; border-bottom: 1px solid var(--border); padding: 14px 0; }
+.principle-list h3 { margin: 0; font-size: 10px; }
+.principle-list p { margin: 0; color: #82aa90; font: 10px/1.7 'DM Mono', monospace; }
+.submit-contact:disabled { cursor: wait; opacity: .72; }
+.form-status { margin: 12px 0 0; color: var(--green); font: 10px/1.6 'DM Mono', monospace; }
+@media (max-width: 760px) {
+  .stack-groups, .system-grid { grid-template-columns: 1fr; }
+  .systems { padding-bottom: 65px; }
+  .principles { grid-template-columns: 1fr; gap: 65px; padding: 65px 0; }
+  .principles h2 { font-size: 61px; margin-bottom: 27px; }
+  .principle-list article { grid-template-columns: 1fr; gap: 5px; }
+}
